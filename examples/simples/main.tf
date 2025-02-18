@@ -2,9 +2,9 @@ provider "google" {
   # Configurações do provedor Google Cloud
 }
 
-module "compute_instances" {
-  source = "./google_compute_instance_module"
-
+module "module-compute_engine" {
+  source  = "tonnyluiz00/module-compute_engine/gcp"
+  version = "1.0.0"
   instances = [
     {
       compute_name = "instance-1"
